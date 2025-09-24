@@ -21,6 +21,8 @@ The last node in the list points to `nullptr` (or `NULL`), signifying the end of
 
 This structure allows linked lists to grow or shrink dynamically at runtime, making them highly flexible compared to static arrays.
 
+-----
+
 ### ⚙️ Core Operations & Algorithms
 
 The following algorithms and flowcharts detail the most common operations performed on a singly linked list.
@@ -152,11 +154,14 @@ graph TD
 
 ### 🚀 Why Use Linked Lists?
 
-| Aspect | Linked List | Array |
+While both linked lists and arrays are linear data structures, they have key differences in how they store and manage data. Understanding these distinctions is crucial for choosing the right data structure for a given problem.
+
+| Feature | Linked List | Array |
 | :--- | :--- | :--- |
-| **Dynamic Size** | Can grow and shrink dynamically; no need to pre-allocate. | Static size; fixed at compile time (or requires resizing). |
-| **Memory Usage** | Nodes can be scattered; requires extra space for pointers. | Contiguous memory blocks; efficient space utilization. |
-| **Insertion/Deletion** | Fast (O(1)) at the head; O(n) for other positions. | Slow (O(n)) as elements need to be shifted. |
-| **Random Access** | Slow (O(n)); requires traversal from the head. | Fast (O(1)); direct access via index. |
+| **Memory Allocation** | Dynamic and non-contiguous. Nodes are scattered in memory. | Static and contiguous. Elements are stored next to each other in a single block. |
+| **Size** | Dynamic. Can grow or shrink at runtime without pre-allocating space. | Fixed or requires resizing. Size is set at initialization. Resizing involves creating a new array and copying elements, which is a slow operation. |
+| **Insertion/Deletion** | Efficient. Adding or removing elements at the beginning is O(1). At other positions, it's O(n). | Inefficient. Inserting or deleting elements requires shifting subsequent elements, a slow O(n) operation. |
+| **Random Access** | Slow. Accessing an element by index (e.g., `list[5]`) is not possible directly. You must traverse from the head, an O(n) operation. | Fast. Elements can be accessed instantly by their index (e.g., `array[5]`) because of their contiguous memory layout. This is an O(1) operation. |
+| **Memory Overhead** | High. Each node requires extra memory for the pointer to the next node. | Low. No extra space is needed besides the data itself. |
 
 Linked lists are particularly useful for implementing data structures like **stacks**, **queues**, and **graphs**. They excel in scenarios where the number of elements is unknown beforehand or where frequent insertions and deletions are required.

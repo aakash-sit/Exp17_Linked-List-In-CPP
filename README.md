@@ -1,4 +1,4 @@
-### 📚 Cpp\_Exp17\_Linked\_List: A Journey into Dynamic Data Structures
+### ⛓️ Cpp\_Exp17\_Linked\_List: A Deep Dive into Dynamic Data Structures ⛓️
 
 This repository serves as a comprehensive guide to understanding and implementing **linked lists** in C++. It covers fundamental concepts, core operations, and various types of linked lists to help you master this dynamic data structure.
 
